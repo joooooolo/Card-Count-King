@@ -1,3 +1,5 @@
+import "./style.css"
+
 let myImage = document.querySelector("img");
 
 myImage.onclick = function() {
