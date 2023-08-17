@@ -1,4 +1,6 @@
-let  myImage = document.querySelector("img");
+import "./style.css"
+
+let myImage = document.querySelector("img");
 
 myImage.onclick = function() {
   let mySrc = myImage.getAttribute("src");
@@ -8,7 +10,8 @@ myImage.onclick = function() {
     myImage.setAttribute("src", "images/testimage.jpg");
   }
 }
-//welcome message code
+
+// welcome message code
 let myButton = document.querySelector("button");
 let myHeading = document.querySelector("h1");
 
@@ -16,18 +19,17 @@ function setUserName() {
   let myName = prompt("Please enter your name.");
   if (!myName) {
     setUserName();
+  } else {
+    localStorage.setItem("name", myName);
+    myHeading.textContent = `Blackjack is cool, ${myName}`;
   }
-  else {
-  localStorage.setItem("name", myName);
-  myHeading.textContent = 'Blackjack is cool, '+ myName;
 }
-}
+
 if (!localStorage.getItem("name")) {
   setUserName();
-
 } else {
-  let  storedName = localStorage.getItem("name");
-  myHeading.textContent = 'Blackjack is cool, ' + storedName;
+  let storedName = localStorage.getItem("name");
+  myHeading.textContent = `Blackjack is cool, ${storedName}`;
 }
 
 myButton.onclick = function() {
@@ -38,4 +40,3 @@ const arr = [1, 2, 3, 4, 5];
 for (const n of arr) {
   console.log(n);
 }
-
