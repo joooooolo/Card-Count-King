@@ -1,49 +1,31 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>My test page</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
-  </head>
-
-  <body>
-    <h1>First Header</h1>
-    <h2>Second Header</h2>
-    <h3>Thirds Header</h3>
-    <h4>Fourth Header</h4>
-
-    <p>My cat is <strong>very</strong> grumpy</p>
-
-    <img src="/images/testimage.jpg" alt="Blonde Dealer" width="600px" />
-
-    <p>This is Card Counting King</p>
-    <p>You can practice your card counting skills by playing the game at the same time</p>
-    <p>Once you start game by clicking Deal, you start counting the cards dealt on the table</p>
-
-    <ul>
-      <li>Deal</li>
-      <li>Hit</li>
-      <li>Stay</li>
-      <li>Double</li>
-      <li>Split</li>
-    </ul>
-
-    <p>At a random time during the game, you will be asked about the True Count</p>
-
-    <ol>
-      <li>Cards 2-6 = +1</li>
-      <li>Cards 7-9 = 0</li>
-      <li>Cards 10-A = -1 </li>
-    </ol>
-
-    <p><a href="https://www.wikihow.com/Count-Cards">Blackjack Counting</a></p>
-    <p>If you answer correctly, you will continue with the same count, if not, cards will be shuffled and you will restart the game</p>
-    <p>Enjoy</p>
-
-    <button>Change user</button>
-
-    <script type="module" src="/main.js"></script>
-  </body>
-</html>
+<head>
+  <link href="style.css" rel="stylesheet" />
+  <meta charset ="utf-8"/>
+  <meta name ="viewport" content="width=device-width"/>
+<title> Card Counter King</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans"                                                                          rel="stylesheet"/>
+</head>
+<body>
+  <div id="dealer" class="cards">
+    <img class="card" src="cards/KC.png" alt="King of Clubs">
+  </div>
+  <div id="player" class="cards">
+    <img class="card" src="cards/AH.png" alt="Ace of Hearts">
+<img class="card" src="cards/9C.png" alt="9 of Clubs">
+<img class="card" src="cards/6S.png" alt="6 of Spades">
+<img class="card" src="cards/XH.png" alt="10 of Hearts">
+<img class="card" src="cards/AC.png" alt="Ace of Clubs">
+<img class="card" src="cards/QH.png" alt="Queen of Hearts">
+<img class="card" src="cards/5S.png" alt="5 of Spades">
+<img class="card" src="cards/3D.png" alt="3 of Diamonds">
+  </div>
+  <div class="button">
+  <button>Deal </button>
+  <button>Hit </button>
+  <button> Stay </button>
+  <button> Split </button>
+  <button> Double </button>
+<script src="main.js"></script>
+</body>
